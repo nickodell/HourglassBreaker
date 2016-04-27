@@ -6,6 +6,8 @@ It does not matter how many iterations you've set in Hourglass, because the unde
 
 A test vector is included. HourglassBreaker works best on medium length messages. If it's too short, then the CRC isn't effective, and multiple keys produce a file that checksums correctly. The longer the file is, the longer HB will take.
 
+This works as of commit [8cf7c8c](https://github.com/NateBrune/Hourglass/tree/8cf7c8c98ce772f094f77844092c29948cf74170).
+
 ## Example usage
 
     $ time ./bruteforce.py todecrypt
