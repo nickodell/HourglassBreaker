@@ -8,16 +8,24 @@ A test vector is included. HourglassBreaker works best on medium length messages
 
 ## Example usage
 
-$ time ./bruteforce.py todecrypt
-Solution found!
-key = 0x2a4f
-plaintext = b'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n'
-flags = 2
+    $ time ./bruteforce.py todecrypt
+    Solution found!
+    key = 0x2a4f
+    plaintext = b'Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n'
+    flags = 2
 
-real	0m3.239s
-user	0m3.240s
-sys	0m0.000s
+    real	0m3.239s
+    user	0m3.240s
+    sys	0m0.000s
 
 ## License
 
 GPLv3
+
+## Dependencies
+
+Python 3
+
+## Bugs
+
+Doesn't support qCompress. If you get 'flags = 3' and a bunch of gobbledygook, that's because the data is compressed.
